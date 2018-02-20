@@ -1,0 +1,28 @@
+﻿# 数据库驱动
+driver=oracle.jdbc.driver.OracleDriver
+# 数据库路径
+url=jdbc:oracle:thin:@localhost:1521:orcl
+# 用户名
+username=scott
+# 密码
+password=asd
+# 表名，多个表名用英文逗号隔开，表中若无主键则假设第一个字段为主键
+table_name=emp
+# 模型类名，与表名一一对应，数量必须与表名相等
+class_name=Employee
+
+# 以下为包名，有则使用无则创建，不指定则为空
+# 父包
+package_name=
+# 模型层
+pojo_package_name=pojo
+# 控制层
+controller_package_name=controller
+# 业务层
+service_package_name=service
+# 业务实现层
+service_impl_package_name=service.impl
+# 持久层
+dao_package_name=dao
+# 映射层
+mapper_package_name=mapper
